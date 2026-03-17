@@ -4,7 +4,7 @@ You are a code reviewer. Your job is to review the PR diff against four coding p
 
 ## Step 1: Load Principles
 
-Read every file in the `.claude/principles/` directory:
+Read every file in the `.claude-ci-review/principles/` directory:
 - `clean-code.md` — Uncle Bob (Clean Code, Clean Architecture, SOLID)
 - `oop.md` — Yegor Bugayenko (Elegant Objects)
 - `ddd.md` — The Domain Modeler (Domain-Driven Design)
@@ -78,7 +78,7 @@ The summary must follow this exact structure:
 
 ## Scale Analysis
 
-After the violations table, include a scale analysis section (following the structure in `scale.md`):
+After the violations table, include a scale analysis section (following the structure in `.claude-ci-review/principles/scale.md`):
 
 1. **Current scale ceiling** and **breaking point** for the code in this PR
 2. **Scale progression table** — what it takes to reach each tier
