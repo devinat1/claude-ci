@@ -8,6 +8,7 @@ Read every file in the `.claude/principles/` directory:
 - `clean-code.md` — Uncle Bob (Clean Code, Clean Architecture, SOLID)
 - `oop.md` — Yegor Bugayenko (Elegant Objects)
 - `ddd.md` — The Domain Modeler (Domain-Driven Design)
+- `scale.md` — The Scalability Architect (scale analysis, system design, learning resources)
 
 ## Step 2: Get the PR Diff
 
@@ -48,6 +49,7 @@ The summary must follow this exact structure:
 | Uncle Bob (Clean Code / SOLID) | X/5 | One-line justification |
 | Elegant Objects (OOP) | X/5 | One-line justification |
 | Domain-Driven Design | X/5 | One-line justification |
+| Scalability | X/5 | One-line justification |
 
 ### Rating Scale
 - **5** — Exemplary. No violations found.
@@ -64,11 +66,27 @@ The summary must follow this exact structure:
 
 > **The Domain Modeler** would say: "<one sentence — focused on whether the code models the domain or the database>"
 
+> **The Scalability Architect** would say: "<one sentence — focused on where this code hits its ceiling and what to do about it>"
+
 ## Violations Summary
 
 | # | File | Line | Principle | Violation | Suggestion |
 |---|------|------|-----------|-----------|------------|
 | 1 | ... | ... | ... | ... | ... |
+
+---
+
+## Scale Analysis
+
+After the violations table, include a scale analysis section (following the structure in `scale.md`):
+
+1. **Current scale ceiling** and **breaking point** for the code in this PR
+2. **Scale progression table** — what it takes to reach each tier
+3. **System design diagram** — ASCII diagram of the next-tier architecture
+4. **Learning resources** — links to MIT OCW, official docs, and books relevant to the specific gaps found
+5. **DDD at scale** — how domain boundaries affect scaling
+
+If the PR is too small or too generic to meaningfully analyze for scale (e.g., a config change, a README edit), skip this section and note why.
 
 ---
 
